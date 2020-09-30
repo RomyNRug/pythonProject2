@@ -1,1 +1,9 @@
-import math
+#1
+for i in range(1000):
+    print("I like turtles")
+
+#2
+for i in range (12):
+    month = ["January", "Febuary","March", "April","May", "June","July", "August", "September", "October", "November", "December" ]
+    print("The month is ",month)
+
