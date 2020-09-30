@@ -1,15 +1,38 @@
 import turtle
+from turtle import Turtle
+from typing import Type
 
 paper = turtle.Screen()
 leonardo = turtle.Turtle()
+leonardo.pensize(10)
 
-colors = ['red','ýellow',]
+window= turtle.Screen()
+window.bgcolor("light gray")
 
-for element in [0,1,2,3,4,5]:
+colors = ['red','orange','green','blue','purple']
+
+for element in range (12):
+    leonardo.color(colors[element % len(colors)])
     leonardo.forward(50)
     leonardo.left(30)
-    leonardo.forward(50)
-    leonardo.left(40)
+
+size= 10
+
+size= size + 3
+
+dicaprio= turtle.Turtle()
+dicaprio.shape("turtle")
+dicaprio.forward(size)
+dicaprio.left(120)
+dicaprio.forward(80)
+dicaprio.left(120)
+dicaprio.forward(80)
+dicaprio.left(120)
+
+
+
+
+
 
 
 
