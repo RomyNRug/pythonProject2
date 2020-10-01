@@ -114,22 +114,70 @@ for i in numbers:
 #paper.exitonclick()
 
 #11
+#
 import turtle
-paper=turtle.Screen()
-risotto=turtle.Turtle()
-for i in range(12):
-    risotto.penup()
-    risotto.forward(80)
-    risotto.pendown()
-    risotto.forward(10)
-    risotto.penup()
-    risotto.forward(30)
-    risotto.stamp()
-    risotto.backward(120)
-    risotto.right(30)
+#paper=turtle.Screen()
+#risotto=turtle.Turtle()
+#for i in range(12):
+  #  risotto.penup()
+  #  risotto.forward(80)
+  #  risotto.pendown()
+  #  risotto.forward(10)
+  #  risotto.penup()
+   # risotto.forward(30)
+  #  risotto.stamp()
+ #   risotto.backward(120)
+ #   risotto.right(30)
 
-risotto.stamp()
-paper.exitonclick()
+#risotto.stamp()
+#paper.exitonclick()
+
+#1
+numbers = (159, 26, 31, 416, 575, 65, 756, 81, 948)
+count_odd = 0
+count_even = 0
+for x in numbers:
+        if x % 2:
+            count_odd+=1
+        else:
+            count_even+=1
+print("Number of even numbers :",count_even)
+print("Number of odd numbers :",count_odd)
+
+#2
+total=0
+numbers = (159, 26, 31, 416, 575, 65, 756, 81, 948)
+for i in numbers:
+    total+=i
+print(total)
+
+#3
+list = [-11,-116,-978,-616,-494,-161,-493]
+total= 1
+for i in list:
+    if i < 0:
+        total += i
+print(total)
+
+#4 ?????
+list101= ["dance","scare","secret","chess","nice","expert", "sleep", "kettle"]
+count=0
+if len(list101) == 5:
+    count+=1
+print(count)
+
+#5
+#numbers= [6,64.2,8,3,7,3]
+#    sum = 0
+#    for i in numbers:
+#        if i % 2 == 0:
+#           break
+# else:
+#  sum += numbers
+
+list= ["dance","scare","secret","chess","nice","expert", "sleep", "kettle"]
+
+
 
 
 
