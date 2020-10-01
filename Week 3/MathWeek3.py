@@ -64,8 +64,72 @@ for i in numbers:
  #   manual.left(360/4)
 #paper.exitonclick
 
+#6 +7 [160, -43, 270, -97, -43, 200, -940, 17,-86]
+#import turtle
+#paper= turtle.Screen()
+#carbonara= turtle.Turtle()
+#for angle in [160, -43, 270, -97, -43, 200, -940, 17,-86]:
+ #   carbonara.left(angle)
+ #   carbonara.forward(100)
+#print("The heading was", carbonara.heading())
+#paper.exitonclick()
+
+#8
+#then in order to turn left should be 360/18=20 so 20 degrees
+
+#import turtle
+#paper= turtle.Screen()
+#carbonara= turtle.Turtle()
+#carbonara.right(90)
+#carbonara.left(3600)
+#carbonara.right(-90)
+#carbonara.speed(10)
+#carbonara.left(3600)
+#carbonara.speed(0)
+#carbonara.left(3645)
+#carbonara.forward(-100)
+#paper.exitonclick()
 
 
+#9
+#import turtle
+#paper= turtle.Screen()
+#carbonara= turtle.Turtle()
+#for i in range(5):
+#    carbonara.forward(110)
+#    carbonara.left(216)
+#    carbonara.hideturtle()
+#paper.exitonclick()
+
+#10
+#import turtle
+#paper= turtle.Screen()
+#bolognese = turtle.Turtle()
+
+#bolognese.hideturtle()
+#bolognese.speed(20)
+#for i in range(350):
+ #   bolognese.forward(i)
+ #   bolognese.right(98)
+#paper.exitonclick()
+
+#11
+import turtle
+paper=turtle.Screen()
+risotto=turtle.Turtle()
+for i in range(12):
+    risotto.penup()
+    risotto.forward(80)
+    risotto.pendown()
+    risotto.forward(10)
+    risotto.penup()
+    risotto.forward(30)
+    risotto.stamp()
+    risotto.backward(120)
+    risotto.right(30)
+
+risotto.stamp()
+paper.exitonclick()
 
 
 
