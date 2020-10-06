@@ -10,7 +10,7 @@ for i in range(350):
     cheese.right(98)
 
 turtle.pensize(3)
-turtle.speed(15)
+turtle.speed(50)
 
 manual= turtle.Turtle()
 for i in range (4):
@@ -31,6 +31,11 @@ tori= turtle.Turtle()
 for i in range (4):
     cali.back(100)
     cali.left(360/4)
+
+rubi= turtle.Turtle()
+rubi.setposition(0,-200)
+rubi.circle(200)
+
 
 
 paper.exitonclick()
