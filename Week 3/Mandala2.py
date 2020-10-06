@@ -9,5 +9,4 @@ for i in range(6):
         turtle.color(colours)
         turtle.circle(100)
         turtle.left(10)
-
 turtle.hideturtle()
