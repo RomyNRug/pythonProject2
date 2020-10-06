@@ -1,12 +1,4 @@
-
 import turtle
-paper= turtle.Screen()
-cheese = turtle.Turtle()
-cheese.hideturtle()
-cheese.speed(20)
-for i in range(350):
-    cheese.forward(i)
-    cheese.right(98)
 
 turtle.bgcolor("pink")
 turtle.pensize(3)

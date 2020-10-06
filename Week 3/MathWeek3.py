@@ -8,11 +8,11 @@ for i in month:
     print("The month is ",month)
 
 #3
-#import turtle
-#tess = turtle.Turtle()
-#tess.left(3645)
-#paper= turtle.Screen
-#paper.exitonclick()
+import turtle
+tess = turtle.Turtle()
+paper= turtle.Screen
+tess.left(3645)
+
 
 
 #4 a, b, c, d
@@ -38,99 +38,89 @@ for i in numbers:
     print(product)
 
 #5 Equilateral Triangle
-#import turtle
-#paper=turtle.Screen()
-#john=turtle.Turtle()
-#for i in range(3):
-  #  john.forward(100)
-   # john.left(120)
-#paper.exitonclick()
+
+john=turtle.Turtle()
+for i in range(3):
+    john.forward(100)
+    john.left(120)
+
 
 #Hexagon                    ocatgon is (forward 75 and left(360/8)
-#import turtle
-#paper=turtle.Screen()
-#carlos=turtle.Turtle()
-#for i in range(6):
- #   carlos.forward(50)
-  #  carlos.left(60)
-#paper.exitonclick()
+
+carlos=turtle.Turtle()
+for i in range(6):
+    carlos.forward(50)
+    carlos.left(60)
+
 
 #square
-#import turtle
-#paper=turtle.Screen()
-#manual= turtle.Turtle()
-#for i in range (4):
- #   manual.forward(100)
- #   manual.left(360/4)
-#paper.exitonclick
+
+
+manual= turtle.Turtle()
+for i in range (4):
+    manual.forward(100)
+    manual.left(360/4)
+
 
 #6 +7 [160, -43, 270, -97, -43, 200, -940, 17,-86]
-#import turtle
-#paper= turtle.Screen()
-#carbonara= turtle.Turtle()
-#for angle in [160, -43, 270, -97, -43, 200, -940, 17,-86]:
- #   carbonara.left(angle)
- #   carbonara.forward(100)
-#print("The heading was", carbonara.heading())
-#paper.exitonclick()
+
+carbo= turtle.Turtle()
+for angle in [160, -43, 270, -97, -43, 200, -940, 17,-86]:
+    carbo.left(angle)
+    carbo.forward(100)
+print("The heading was", carbo.heading())
+
 
 #8
 #then in order to turn left should be 360/18=20 so 20 degrees
 
-#import turtle
-#paper= turtle.Screen()
-#carbonara= turtle.Turtle()
-#carbonara.right(90)
-#carbonara.left(3600)
-#carbonara.right(-90)
-#carbonara.speed(10)
-#carbonara.left(3600)
-#carbonara.speed(0)
-#carbonara.left(3645)
-#carbonara.forward(-100)
-#paper.exitonclick()
+
+carbonara= turtle.Turtle()
+carbonara.right(90)
+carbonara.left(3600)
+carbonara.right(-90)
+carbonara.speed(10)
+carbonara.left(3600)
+carbonara.speed(0)
+carbonara.left(3645)
+carbonara.forward(-100)
+
 
 
 #9
-#import turtle
-#paper= turtle.Screen()
-#carbonara= turtle.Turtle()
-#for i in range(5):
-#    carbonara.forward(110)
-#    carbonara.left(216)
-#    carbonara.hideturtle()
-#paper.exitonclick()
+
+carbonara= turtle.Turtle()
+for i in range(5):
+    carbonara.forward(110)
+    carbonara.left(216)
+    carbonara.hideturtle()
 
 #10
-#import turtle
-#paper= turtle.Screen()
-#bolognese = turtle.Turtle()
 
-#bolognese.hideturtle()
-#bolognese.speed(20)
-#for i in range(350):
- #   bolognese.forward(i)
- #   bolognese.right(98)
-#paper.exitonclick()
+bolognese = turtle.Turtle()
+
+bolognese.hideturtle()
+bolognese.speed(20)
+for i in range(350):
+    bolognese.forward(i)
+    bolognese.right(98)
 
 #11
-#
-import turtle
-#paper=turtle.Screen()
-#risotto=turtle.Turtle()
-#for i in range(12):
-  #  risotto.penup()
-  #  risotto.forward(80)
-  #  risotto.pendown()
-  #  risotto.forward(10)
-  #  risotto.penup()
-   # risotto.forward(30)
-  #  risotto.stamp()
- #   risotto.backward(120)
- #   risotto.right(30)
 
-#risotto.stamp()
-#paper.exitonclick()
+
+risotto=turtle.Turtle()
+for i in range(12):
+    risotto.penup()
+    risotto.forward(80)
+    risotto.pendown()
+    risotto.forward(10)
+    risotto.penup()
+    risotto.forward(30)
+    risotto.stamp()
+    risotto.backward(120)
+    risotto.right(30)
+
+risotto.stamp()
 
 #1
 numbers = (159, 26, 31, 416, 575, 65, 756, 81, 948)
@@ -167,13 +157,13 @@ if len(list101) == 5:
 print(count)
 
 #5
-#numbers= [6,64.2,8,3,7,3]
-#    sum = 0
-#    for i in numbers:
-#        if i % 2 == 0:
-#           break
-# else:
-#  sum += numbers
+numbers= [6,64.2,8,3,7,3]
+sum = 0
+for i in numbers:
+        if i % 2 == 0:
+           break
+        else:
+           sum += numbers
 
 list= ["dance","scare","secret","chess","nice","expert", "sleep", "kettle"]
 
