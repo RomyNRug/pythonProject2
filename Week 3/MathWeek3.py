@@ -122,6 +122,8 @@ for i in range(12):
 
 risotto.stamp()
 
+
+
 #1
 numbers = (159, 26, 31, 416, 575, 65, 756, 81, 948)
 count_odd = 0
@@ -166,6 +168,27 @@ for i in numbers:
            sum += numbers
 
 list= ["dance","scare","secret","chess","nice","expert", "sleep", "kettle"]
+
+#6 Count how many words occur in a list up to and including the first occurrence of the word “sam”. (What if “sam” does not occur?)
+list5=["carlos","juan","manuel","jason","marcos","sam"]
+count=0
+for i in list5:
+    count += 1
+    if i == ["sam"]:
+        break
+
+
+#7 Add a print function to Newton’s sqrt algorithm that prints out better each time it is calculated. Call your modified program with 25 as an argument and record the results
+#do not understand the question?
+
+#8
+
+n=int(input("Please Enter n:"))
+y1=((n**2)+n)/(2)
+print (y1)
+
+
+
 
 
 
