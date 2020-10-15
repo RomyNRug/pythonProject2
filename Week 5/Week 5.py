@@ -95,3 +95,51 @@ for i in range(1, 11):
 
 #5.2
 
+#5.3
+horsemen = ["war", "famine", "pestilence", "death"]
+
+for i in [0, 1, 2, 3]:
+    print(horsemen[i])
+
+#easier way
+for h in horsemen:
+    print (h)
+
+horsemen = ["war", "famine", "pestilence", "death"]
+for horseman in horsemen:
+    print (horsemen)
+
+
+students = [("John", ["CompSci", "Physics"]),("Vusi", ["Maths", "CompSci", "Stats"]), ("Jess", ["CompSci", "Accounting", "Economics", "Management"]), ("Sarah", ["InfSys", "Accounting", "Economics", "CommLaw"]), ("Zuki", ["Sociology", "Economics", "Law", "Stats", "Music"])]
+counter = 0
+for name, subjects in students:
+    if "CompSci" in subjects:
+        counter += 1
+print("The number of students taking CompSci is", counter)
+
+for number in range(20):
+    if number % 3 == 0:
+        print(number)
+for fruit in ["banana", "apple", "quince"]:
+    print("I like to eat " + fruit + "s!")
+
+xs = [1, 2, 3, 4, 5]
+for (i, val) in enumerate(xs):
+    xs[i] = val**2
+print (xs)
+
+def primes_lessthan(n):
+    result = []
+    is_prime= []
+    for i in range(2, n):
+        if is_prime(i):
+            result.append(i)
+    return result
+
+def f(n):
+    for i in range(101, n):
+        if (i % 21 == 0):
+            return i
+print(f(110) == 105)
+print(f(1000000000) == 105)
+
