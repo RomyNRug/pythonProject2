@@ -73,3 +73,4 @@ with open("test.txt", "r") as my_new_handle:
     for the_line in my_new_handle:
         print(the_line, end="")
 
+
