@@ -20,4 +20,15 @@ new_pix = np.array(new_pix).astype('uint8')
 im2 = Image.fromarray(new_pix)
 im2.show()
 
+maximum = np.max(pix)
+scale = 255.0/maximum
+new_pix = []
+for row in pix:
+    new_row = []
+    for pixel in row:
+        new_row.append(pixel * scale)
+    new_pix.append(new_row)
+new_pix = np.array(new_pix).astype('uint8')
 
+im2 = Image.fromarray(new_pix)
+im2.show()
