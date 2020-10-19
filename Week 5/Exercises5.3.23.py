@@ -25,7 +25,8 @@ that = this
 print("Test 2: {0}".format(this is that))
 #the reason why test 1 is false is becaused this and that are not aliasied with each other that is why in test 2 this = that is true
 
-#5
+#5 #### len(vector)
+
 summation_vector= 0
 def add_vectors(vector1,vector2):
     for vector1,vector2 in add_vectors:
