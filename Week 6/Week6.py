@@ -60,3 +60,16 @@ def fade_color(image):
 im = Image.open("fruit.jpg")
 im2 = fade_bw(im)
 im2.save("fruit_fade.png", "PNG")
+
+
+###########################
+
+with open("test.txt", "w") as myfile:
+    myfile.write("My first file written from Python\n")
+    myfile.write("---------------------------------\n")
+    myfile.write("Hello, world!\n")
+
+with open("test.txt", "r") as my_new_handle:
+    for the_line in my_new_handle:
+        print(the_line, end="")
+
