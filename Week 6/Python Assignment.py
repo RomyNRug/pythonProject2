@@ -1,13 +1,14 @@
 #Revisiting exercise 2.4.2
 
-distance = float(input("How far is your destination in kilometers?"))
+distance = input("How far is your destination in kilometers?")
 transportation= input("What was your mode of transportation?")
-#distance= float(distance)
+distance_time= float(distance)
 total_km= 0
 total_time= 0 # in minutes
 avg_bike= 11 #11 kilometers/hour
+total_break_time= 0
 
-for i in distance:
+for _ in distance:
     if transportation == "car":
         avg_car_km_h= 50    #average km per hour
         total_km += avg_car_km_h
@@ -22,19 +23,21 @@ for i in distance:
         if bike_shed == "yes":
             total_time += 5 #minutes
     if transportation == "walk":
+        externality_walk = input("Did you experience any delay due to fatigue and therefore took breaks?") #why does it come back here?
         avg_walk_km_h= 5
         total_km += avg_walk_km_h
-        walk_time= (avg_walk_km_h*distance)/60
-        externality_walk= input("Did you experience any delay due to fatigue and therefore took breaks?")
+        walk_time= (distance_time/avg_walk_km_h)
         if externality_walk == "yes":
             amount_breaks= input("how many breaks did you take?")
             if amount_breaks == "yes":
-                avg_break_time = 15
+                avg_break_time = (0.25)#15/60
                 amount_breaks = float()
                 total_break_time= amount_breaks*avg_break_time
                 walk_time += total_break_time
-        total_time+= walk_time
-    print(total_time)
+            elif externality_walk == "no":
+                total_break_time = 0
+    total_time+= walk_time+ total_break_time #why is it not adding break time?
+print("The time you took to your destination is ",total_time, " ,defined in hours including externalities")
 
 
 
