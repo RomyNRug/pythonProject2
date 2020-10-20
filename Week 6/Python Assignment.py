@@ -19,9 +19,11 @@ for _ in distance:
     if transportation == "bike":
         avg_bike_km_h =11
         total_km += avg_bike_km_h
+        tot_bike_time= total_km/avg_bike_km_h
         bike_shed= input("Did you have to take the bike out of the shed?")
         if bike_shed == "yes":
-            total_time += 5 #minutes
+            extra_bike_time = (5/60)
+    total_time = extra_bike_time + tot_bike_time
     if transportation == "walk":
         externality_walk = input("Did you experience any delay due to fatigue and therefore took breaks?") #why does it come back here?
         avg_walk_km_h= 5
@@ -36,7 +38,7 @@ for _ in distance:
                 walk_time += total_break_time
             elif externality_walk == "no":
                 total_break_time = 0
-    total_time+= walk_time+ total_break_time #why is it not adding break time?
+        total_time+= walk_time+ total_break_time #why is it not adding break time?
 print("The time you took to your destination is ",total_time, " ,defined in hours including externalities")
 
 
