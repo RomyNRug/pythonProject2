@@ -4,6 +4,13 @@ distance = input("How far is your destination in kilometers? Please enter a numb
 transportation= input("What was your mode of transportation? Choose between car, bike or walk: ")
 distance_time= float(distance)
 total_time= 0
+#in the case of a file with the values listed in them:
+
+def filter(originalfile, valuefile):
+    with open(originalfile, "r") as infile, open(valuefile, "w") as outfile:
+        for line in infile:
+            if line.startswith('value'):
+                outfile.write(line)
 
 for _ in distance:
     if transportation == "car":
